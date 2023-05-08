@@ -5,31 +5,6 @@ export default function ArtistHomeGrid() {
     return(
         <Box>
             <SimpleGrid columns={{base: 1, md: 3}}>
-                <CardArtist 
-                name={'Luciana Revoredo'} 
-                nickname={'@luqfaz'} 
-                description={`artesã, trabalha com diversas linguagens manuais tendo crochê como principal base, 
-                produzindo obras como bolsas, roupas, vasos e tudo que a imaginação lhe vier a mente. Além disso,
-                também vende bijuterias diversas.`}
-                // tags={['#manual', '#obras', '#crochê']}
-                icon={<Avatar
-                    size={'xl'}
-                    src='/perfis/luqfaz-perfil.svg'
-                    mb={4}
-                    pos={'relative'}
-                    _after={{
-                      content: '""',
-                      w: 4,
-                      h: 4,
-                      bg: 'green.300',
-                      border: '2px solid white',
-                      rounded: 'full',
-                      pos: 'absolute',
-                      bottom: 0,
-                      right: 3,
-                    }}
-                  />}
-                />
                 <CardArtist
                 name={'Aldeia Tear'}
                 nickname={'@aldeiatear'}
@@ -54,14 +29,43 @@ export default function ArtistHomeGrid() {
                   }}
                 />}
                 />
+                 <CardArtist 
+                name={'katarina Barbosa'} 
+                nickname={'@katarina_barbosa'} 
+                description={`UX Research, com formação em História, Serviço Social e produtora cultural, 
+                tem seu trabalho focado em comunidades quilombolas, economia criativa e impacto social.
+                Desenvolve projetos incentivados por editais nas linguagens de: música, literatura, 
+                artes visuais, povos tradicionais e moda como produtora executiva, administrativa, curadora, 
+                idealizadora, figurinista e performer.
+                `}
+                // tags={['#manual', '#obras', '#crochê']}
+                icon={<Avatar
+                    size={'xl'}
+                    src='/perfis/katarina/katarina_3.svg'
+                    mb={4}
+                    pos={'relative'}
+                    _after={{
+                      content: '""',
+                      w: 4,
+                      h: 4,
+                      bg: 'green.300',
+                      border: '2px solid white',
+                      rounded: 'full',
+                      pos: 'absolute',
+                      bottom: 0,
+                      right: 3,
+                    }}
+                  />}
+                />
                 <CardArtist
-                name={'Revoredo'}
-                nickname={'@revoredo'}
-                description={`Músico, compositor e produtor cultural, desenvolve diversos projetos que vão desde shows, 
-                eventos de música, teatro, contação de história e literatura`}
+                name={'Lili Novais'}
+                nickname={'@lili'}
+                description={`lili novais é cantora e compositora radicada em garanhuns-pe. a artista desenvolve um trabalho tão 
+                delicado, quanto potente e traz para suas canções, suas percepções poéticas sobre o mundo, que reverberam no timbre
+                 único de sua voz.`}
                 icon={<Avatar
                   size={'xl'}
-                  src='/perfis/revoredo-perfil.svg'
+                  src='/perfis/lili.svg'
                   mb={4}
                   pos={'relative'}
                   _after={{

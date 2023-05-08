@@ -1,5 +1,5 @@
-
 import {
+    Image,
     Box,
     Flex,
     Text,
@@ -29,14 +29,14 @@ import {
     return (
       <Box>
         <Flex
-          bg={useColorModeValue('blue.800', 'gray.800')}
-          color={useColorModeValue('white', 'white')}
+          bg={useColorModeValue('redBrand', 'gray.800')}
+          color={useColorModeValue('black', 'black')}
           minH={'60px'}
-          py={{ base: 6 }}
+          py={{ base: 2 }}
           px={{ base: 4 }}
           borderBottom={1}
           borderStyle={'solid'}
-          borderColor={useColorModeValue('blue.800', 'gray.900')}
+          borderColor={useColorModeValue('yellowBrand', 'gray.900')}
           align={'center'}>
           <Flex
             flex={{ base: 1, md: 'auto' }}
@@ -52,20 +52,26 @@ import {
             />
           </Flex>
           <Flex flex={{ base: 2 }} justify={{ base: 'center', md: 'start' }} ml={3}>
-            <Text
+            {/* <Text
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('yellow.400', 'white')}
               fontSize='5xl'
               >
-              GUS ART
-            </Text>
-  
+              PE na arte
+            </Text> */}
+            <Image
+              
+              rounded={'lg'}
+              height={95}
+              width={250}
+              objectFit={'cover'}
+              src='/logo.svg'
+            />
             <Flex display={{ base: 'none', md: 'flex' }} ml={80} mt={6}>
               <DesktopNav />
             </Flex>
           </Flex>
-  
           <Stack
             flex={{ base: 1, md: 0 }}
             justify={'flex-end'}
@@ -76,20 +82,24 @@ import {
               fontSize={'sm'}
               fontWeight={400}
               variant={'link'}
-              href={'#'}
-              color={'white'}
+              href={'/login'}
+              color={'black'}
               >
               Fazer Login
             </Button>
             <Button
+              as={'a'}
               display={{ base: 'none', md: 'inline-flex' }}
               fontSize={'sm'}
               fontWeight={600}
               color={'white'}
-              bg={'pink.400'}
+              bg={'greenBrand'}
               _hover={{
-                bg: 'pink.300',
-              }}>
+                bg: 'whiteIceBrand',
+                color: 'black',
+              }}
+              href={'/cadastro/userRegister'}
+              >
               Cadastre-se
             </Button>
           </Stack>
@@ -103,25 +113,25 @@ import {
   }
   
   const DesktopNav = () => {
-    const linkColor = useColorModeValue('white', 'gray.200');
+    const linkColor = useColorModeValue('black', 'gray.200');
     const linkHoverColor = useColorModeValue('gray.800', 'white');
     const popoverContentBgColor = useColorModeValue('yellow.400', 'gray.800');
   
     return (
-      <Stack direction={'row'} spacing={4}>
+      <Stack direction={'row'} my={3} mx={-10}>
         {NAV_ITEMS.map((navItem) => (
           <Box key={navItem.label}>
             <Popover trigger={'hover'} placement={'bottom-start'}>
-              <PopoverTrigger>
+              <PopoverTrigger >
                 <Link
-                  p={2}
+                ml={3}
                   href={navItem.href ?? '#'}
                   fontSize={'sm'}
                   fontWeight={500}
                   color={linkColor}
                   _hover={{
                     textDecoration: 'none',
-                    color: linkHoverColor,
+                    color: 'white',
                   }}>
                   {navItem.label}
                 </Link>
@@ -129,12 +139,18 @@ import {
   
               {navItem.children && (
                 <PopoverContent
+                  mt={2}
                   border={0}
                   boxShadow={'xl'}
-                  bg={popoverContentBgColor}
+                  bg={'blueBrand'}
                   p={4}
                   rounded={'xl'}
-                  minW={'sm'}>
+                  minW={'sm'}
+                  _hover={{
+                    textDecoration: 'none',
+                    color: 'white',
+                  }}
+                  >
                   <Stack>
                     {navItem.children.map((child) => (
                       <DesktopSubNav key={child.label} {...child} />
@@ -157,12 +173,12 @@ import {
         display={'block'}
         p={2}
         rounded={'md'}
-        _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
+        _hover={{ bg: useColorModeValue('redBrand', 'gray.900') }}>
         <Stack direction={'row'} align={'center'}>
           <Box>
             <Text
               transition={'all .3s ease'}
-              _groupHover={{ color: 'pink.400' }}
+              _groupHover={{ color: 'yellowBrand' }}
               fontWeight={500}>
               {label}
             </Text>

@@ -9,6 +9,7 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merienda:wght@400;500;600&display=swap" rel="stylesheet" />
+        <link rel='shortcut icon' href='/public/favicon.ico' />
       </Head>
       <body>
         <Main />

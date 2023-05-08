@@ -33,16 +33,16 @@ const Hero = () => {
             <HStack spacing={1} alignItems="flex-start" justifyContent="flex-end" >
             </HStack>
           </HStack>
-          <chakra.h1 fontSize="5xl" lineHeight={1} fontWeight="bold" textAlign="left">
+          <chakra.h1 fontSize="5xl" lineHeight={1} fontWeight="bold" textAlign="left" color='redBrand'>
             O melhor espaço para se compartilhar cultura <br />
-            <chakra.span color="yellow.400">Gus Art</chakra.span>
+            <chakra.span color="blueBrand">PE na arte</chakra.span>
           </chakra.h1>
           <Text
             fontSize="1.2rem"
             textAlign="left"
             lineHeight="1.375"
             fontWeight="400"
-            color="gray.300"
+            color="black"
           >
             Encontre artistas de diversos segmentos dispostos a vender obras e serviços, ou encontre o público ideal para contemplar seu trabalho
           </Text>
@@ -61,7 +61,7 @@ const Hero = () => {
               mb={{ base: 2, sm: 0 }}
               zIndex={5}
               lineHeight={1}
-              bgGradient="linear(to-l, #0ea5e9,#2563eb)"
+              bgGradient="linear(to-l, #0ea5e9,blueBrand)"
               _hover={{ bgGradient: 'linear(to-l, #0ea5e9,#2563eb)', opacity: 0.9 }}
             >
               <chakra.span> conheça o site </chakra.span>

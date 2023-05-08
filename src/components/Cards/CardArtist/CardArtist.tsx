@@ -26,21 +26,21 @@ import {
         <Box
           maxW={'320px'}
           w={'full'}
-          bg={useColorModeValue('yellow.400', 'gray.900')}
+          bg={useColorModeValue('redBrand', 'gray.900')}
           boxShadow={'2xl'}
           rounded={'lg'}
           p={6}
           textAlign={'center'}>
           {icon}
-          <Heading fontSize={'2xl'} fontFamily={'body'}>
+          <Heading fontSize={'2xl'} fontFamily={'body'} color='white'>
             {name}
           </Heading>
-          <Text fontWeight={600} color={'gray.500'} mb={4}>
+          <Text fontWeight={600} color={'greenBrand'} mb={4}>
             {nickname} 
           </Text>
           <Text
             textAlign={'center'}
-            color={useColorModeValue('gray.700', 'gray.400')}
+            color={useColorModeValue('whiteIceColor', 'gray.400')}
             px={3}>
             {description}
           </Text>
@@ -64,7 +64,7 @@ import {
               flex={1}
               fontSize={'sm'}
               rounded={'full'}
-              bg={'blue.400'}
+              bg={'greenBrand'}
               color={'white'}
               boxShadow={
                 '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'

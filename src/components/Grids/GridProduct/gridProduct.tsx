@@ -6,14 +6,14 @@ export default function GridProduct(){
         <Box>
             <SimpleGrid columns={{base: 1, md: 3}}>
             <CardProduct 
-            tag={'obra - @luqfaz'} 
-            name={'Cesto de crochê'} 
-            urlImg={'/products/cesto-product.svg'}
+            tag={'obra - @katarina_barbosa'} 
+            name={'Oficina de modelagem e costura'} 
+            urlImg={'/perfis/katarina/katarina_1.svg'}
             />
             <CardProduct 
-            tag={'serviço - @revoredo'}
-            name={'Oficina: Te canto a canção'}
-            urlImg={'/services_/oficina-tcc-service.svg'}
+            tag={'serviço - @lili'}
+            name={`Show 'meu Canto no mundo'`}
+            urlImg={'/perfis/lili.svg'}
             />
             <CardProduct 
             tag={'serviço - @aldeiaTear'}  

@@ -23,7 +23,7 @@ export default function CardProduct({tag, name, urlImg,}: ProductProps){
           p={9}
           maxW={'335px'}
           w={'full'}
-          bg={useColorModeValue('yellow.400', 'gray.800')}
+          bg={useColorModeValue('redBrand', 'gray.800')}
           boxShadow={'2xl'}
           rounded={'lg'}
           pos={'relative'}
@@ -59,10 +59,10 @@ export default function CardProduct({tag, name, urlImg,}: ProductProps){
             />
           </Box>
           <Stack pt={10} align={'center'}>
-            <Text color={'gray.600'} fontSize={'sm'} textTransform={'uppercase'}>
+            <Text color={'white'} fontSize={'sm'} textTransform={'uppercase'}>
               {tag}
             </Text>
-            <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500} color={'black'}>
+            <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500} color={'white'}>
                 {name}
             </Heading>
             <Stack direction={'row'} align={'center'}>
@@ -70,7 +70,7 @@ export default function CardProduct({tag, name, urlImg,}: ProductProps){
               flex={1}
               fontSize={'sm'}
               rounded={'full'}
-              bg={'blue.400'}
+              bg={'greenBrand'}
               color={'white'}
               boxShadow={
                 '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'

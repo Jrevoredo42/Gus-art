@@ -16,10 +16,10 @@ import {
         <Text
         textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
         fontFamily={'heading'}
-        color={useColorModeValue('blue.400', 'white')}
+        color={useColorModeValue('blueBrand', 'white')}
         fontSize='5xl'
         >
-        GUS ART
+        PE na Arte
       </Text>
     );
   };
@@ -72,7 +72,7 @@ import {
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}>
           <Logo />
-          <Text>© 2023 João Revoredo - Teia Dev</Text>
+          <Text color='black'>© 2023 João Revoredo</Text>
           <Stack direction={'row'} spacing={6}>
             <SocialButton label={'Instagram'} href={'https://www.instagram.com/j.revoredo/'}>
               <FaInstagram />

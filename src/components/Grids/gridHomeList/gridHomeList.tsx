@@ -22,8 +22,8 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
         mb={1}>
         {icon}
       </Flex>
-      <Text fontWeight={600} color={'yellow.400'}>{title}</Text>
-      <Text color={'gray.300'}>{text}</Text>
+      <Text fontWeight={600} color={'redBrand'}>{title}</Text>
+      <Text color={'black'}>{text}</Text>
     </Stack>
   );
 };
